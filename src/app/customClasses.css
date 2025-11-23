@@ -1,0 +1,19 @@
+.bg-main {
+    @apply bg-white dark:bg-gray-900;
+}
+
+.bg-sec {
+    @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.text-main {
+    @apply text-gray-900 dark:text-white;
+}
+
+.text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+}
+
+.accent {
+    @apply text-cyan-400;
+}
