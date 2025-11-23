@@ -1,19 +1,19 @@
-import {CheckCircle, House, Zap} from "lucide-react";
-import {RocketIcon} from "@/components/shared/RocketIcon";
+import { CheckCircle, House, Zap } from "lucide-react";
+import { RocketIcon } from "@/components/shared/RocketIcon";
 import React from "react";
-import {useTranslations} from "next-intl";
-import {useThemeMode} from "@/hooks/useThemeMode";
+import { useTranslations } from "next-intl";
+import { useThemeMode } from "@/hooks/useThemeMode";
 
 export const HeroSection = () => {
     const t = useTranslations()
-    const {isDark} = useThemeMode();
-    const scrollToSection = ()=>{}
+    const { isDark } = useThemeMode();
+    const scrollToSection = (_section: string)=>{}
     const heroGradient =
         'radial-gradient(circle at 15% 25%, rgba(6,182,212,0.08) 0%, rgba(255,255,255,0) 50%) dark:radial-gradient(circle at 15% 25%, rgba(6,182,212,0.15) 0%, rgba(17,24,39,0) 50%)';
 
     return (
         <section className={`relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-48 bg-white dark:bg-gray-900`}>
-            <div className="absolute inset-0 z-0" style={{backgroundImage: heroGradient}}></div>
+            <div className="absolute inset-0 z-0" style={{ backgroundImage: heroGradient }}></div>
 
             <div
                 className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-16">

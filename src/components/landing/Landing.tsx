@@ -7,17 +7,6 @@ import { FeaturesSection } from "@/components/landing/sections/FeaturesSection";
 import { TestimonialSection } from "@/components/landing/sections/TestimonialSection";
 import { RolesSection } from "@/components/landing/sections/RolesSection";
 import { FinalCTASection } from "@/components/landing/sections/FinalCTASection";
-import { useTheme } from "next-themes";
-
-
-
-const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-};
-
 
 
 export const Landing = () => {

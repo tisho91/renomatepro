@@ -12,10 +12,10 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const t = useTranslations();
 
-    const scrollToSection = () =>{}
+    const scrollToSection = (_section: string)=>{}
 
     const { toggleLanguage, locale } = useLanguageMode()
-    const handleScrollAndClose = () =>{}
+    const handleScrollAndClose = (_section: string)=>{}
 
     const baseClasses = 'fixed top-0 left-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800';
 

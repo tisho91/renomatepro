@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 export const RolesSection = () => {
     const t = useTranslations();
     const { isDark } = useThemeMode();
-    const scrollToSection = () =>{}
+    const scrollToSection = (_section: string)=>{}
 
     return (
         <section id="roles" className={`py-24 lg:py-32 bg-sec relative overflow-hidden`}>

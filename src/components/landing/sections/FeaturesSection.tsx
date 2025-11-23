@@ -1,10 +1,10 @@
 import { FeatureCard } from "@/components/shared/FeatureCard";
 import React from "react";
 import { Hammer, Layers, ShoppingCart, TrendingUp } from "lucide-react";
-import {useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
 
 
-
+ 
 
 export const FeaturesSection = () => {
     const t = useTranslations();
