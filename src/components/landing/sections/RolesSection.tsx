@@ -1,15 +1,18 @@
-import { ArrowUpRight, Bolt, Briefcase, CheckCircle, ShieldCheck, ShoppingCart } from "lucide-react";
-import React from "react";
+import { Briefcase, CheckCircle, ShieldCheck, ShoppingCart } from "lucide-react";
+import React, { ForwardedRef } from "react";
 import { useThemeMode } from "@/hooks/useThemeMode";
 import { useTranslations } from "next-intl";
 
-export const RolesSection = () => {
+type RolesSectionProps = {
+    scrollToFinalCta: ()=> void
+}
+
+export const RolesSection = React.forwardRef(({ scrollToFinalCta }:RolesSectionProps , ref: ForwardedRef<HTMLElement>) => {
     const t = useTranslations();
     const { isDark } = useThemeMode();
-    const scrollToSection = (_section: string)=>{}
 
     return (
-        <section id="roles" className={`py-24 lg:py-32 bg-sec relative overflow-hidden`}>
+        <section id="roles" className={`py-24 lg:py-32 bg-sec relative overflow-hidden`} ref={ref}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className={`text-3xl sm:text-4xl font-extrabold mb-4 text-main`}>{t('roles.heading')}</h2>
@@ -39,8 +42,8 @@ export const RolesSection = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button onClick={() => scrollToSection('final-cta')}
-                                className="w-full py-4 rounded-xl border-2 border-cyan-500 text-cyan-500 font-bold hover:bg-cyan-500 hover:text-white transition-colors">
+                        <button onClick={scrollToFinalCta}
+                                className="w-full py-4 rounded-xl border-2 border-cyan-500 text-cyan-500 font-bold hover:bg-cyan-500 hover:text-white transition-colors cursor-pointer">
                             {t('cta.homeowner.button')}
                         </button>
                     </div>
@@ -63,8 +66,8 @@ export const RolesSection = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button onClick={() => scrollToSection('final-cta')}
-                                className={`w-full py-4 rounded-xl font-bold transition-colors ${isDark ? 'bg-white text-gray-900 hover:bg-gray-200' : 'bg-gray-900 text-white hover:bg-gray-800'}`}>
+                        <button onClick={scrollToFinalCta}
+                                className={`w-full py-4 rounded-xl font-bold transition-colors ${isDark ? 'bg-white text-gray-900 hover:bg-gray-200' : 'bg-gray-900 text-white hover:bg-gray-800'} cursor-pointer`}>
                             {t('cta.pro.button')}
                         </button>
                     </div>
@@ -72,4 +75,6 @@ export const RolesSection = () => {
             </div>
         </section>
     )
-}
+});
+
+RolesSection.displayName = 'RolesSection';

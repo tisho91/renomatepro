@@ -1,11 +1,12 @@
 import { Star } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { ForwardedRef, forwardRef } from "react";
 
-export const TestimonialSection = () => {
+export const TestimonialSection = forwardRef( (props, ref: ForwardedRef<HTMLElement>) => {
     const t = useTranslations();
 
     return (
-        <section className={`py-24 bg-main`}>
+        <section className={`py-24 bg-main`} ref={ref}>
             <div className="max-w-4xl mx-auto px-4 text-center">
                 <div className="mb-8">
                     <div className="flex justify-center gap-1 mb-4">
@@ -29,4 +30,6 @@ export const TestimonialSection = () => {
             </div>
         </section>
     )
-}
+});
+
+TestimonialSection.displayName = "TestimonialSection";

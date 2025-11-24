@@ -1,11 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement, SVGProps } from "react";
 import { useThemeMode } from "@/hooks/useThemeMode";
 
 
 type FeatureCardProps = {
     title: string;
     description: string;
-    icon: ReactNode;
+    icon: ReactElement<SVGProps<SVGSVGElement>>;
 }
 
 export const FeatureCard = ({ icon, title, description }:FeatureCardProps) => {
@@ -17,7 +17,6 @@ export const FeatureCard = ({ icon, title, description }:FeatureCardProps) => {
     return (
         <div className={cardClasses}>
             <div className="mb-5 p-3 bg-cyan-500/10 rounded-xl inline-block">
-                {/* @ts-ignore*/}
                 {React.cloneElement(icon, { className: 'w-8 h-8 text-cyan-500' })}
             </div>
             <h3 className={`text-xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-900'}`}>{title}</h3>

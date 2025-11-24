@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import IntlProvider from "@/providers/IntlProvider";
+import { fontClassNames } from "@/ui/fonts";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     title: "RenomatePro",
@@ -32,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{
                 rel="stylesheet"
             />
         </head>
-        <body className="font-sans bg-concrete text-secondary">
+        <body className={`${fontClassNames} font-sans bg-concrete text-secondary`}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

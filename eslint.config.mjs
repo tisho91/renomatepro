@@ -24,6 +24,7 @@ const eslintConfig = defineConfig([
       "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       "prefer-const": "error",
+      "@/object-curly-spacing": ["error", "always"],
     },
   },
 
