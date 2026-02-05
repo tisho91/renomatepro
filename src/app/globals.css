@@ -1,9 +1,13 @@
 @import "tailwindcss";
+@import "./customClasses.css";
 
+@config "../../tailwind.config.js";
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-main: bg-gray-900
 }
+
 
 @theme inline {
   --color-background: var(--background);

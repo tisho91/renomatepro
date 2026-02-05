@@ -1,0 +1,88 @@
+{
+  "brand": {
+    "name": "Renomate"
+  },
+  "nav": {
+    "features": "Features",
+    "solutions": "Solutions",
+    "pros": "Find Pros",
+    "login": "Log In",
+    "register": "Get Started"
+  },
+  "hero": {
+    "tagline": "From Project Plan to Dream Home",
+    "title": {
+      "part1": "Plan, Shop & Build Your",
+      "part2": "Perfect Home."
+    },
+    "subtitle": "Whether you are buying \"off-plan\" or renovating an old gem. We give you the roadmap, the shopping list, and the experts to get it done.",
+    "cta": {
+      "start": "Start Planning",
+      "features": "How it Works"
+    },
+    "banner": "Smart Renovation",
+    "project_status": "Project: New Apartment",
+    "progress": "Phase: Material Selection",
+    "budget_title": "Est. Material Cost:",
+    "next_step": "Next: Order Bathroom Tiles"
+  },
+  "features": {
+    "heading": "Your Digital Technical Lead",
+    "subheading": "Don\"t know where to start? Our platform guides you step-by-step, from the first brick to the final mirror.",
+    "planning": {
+      "title": "Renovation Roadmap",
+      "description": "A generated timeline for your specific property type. Know exactly what comes next."
+    },
+    "shop": {
+      "title": "Smart Material Sourcing",
+      "description": "Compare prices for tiles, flooring, and fixtures across major stores. Calculate quantities automatically."
+    },
+    "pros": {
+      "title": "Hire or DIY",
+      "description": "Decide which tasks to do yourself and which to delegate to our verified master network."
+    },
+    "control": {
+      "title": "Budget & Design",
+      "description": "Track every lev spent. Visualize materials before you buy them."
+    }
+  },
+  "testimonial": {
+    "quote": "I bought an apartment \"on green\" and had no idea where to start. RenomatePro gave me a shopping list and told me exactly when to call the plumber.",
+    "author": "Alex Dimitrov",
+    "role": "First-time Homeowner"
+  },
+  "roles": {
+    "heading": "Tools for Every Stage",
+    "subheading": "A complete ecosystem for your home journey."
+  },
+  "cta": {
+    "homeowner": {
+      "heading": "For Homeowners",
+      "subtitle": "Plan it. Buy it. Build it.",
+      "list1": "Step-by-Step Renovation Guide",
+      "list2": "Material Price Comparator",
+      "list3": "Find Pros for Specific Tasks",
+      "button": "Start My Plan"
+    },
+    "pro": {
+      "heading": "For Professionals",
+      "subtitle": "Keep your schedule full.",
+      "list1": "Receive Ready-to-Start Leads",
+      "list2": "Detailed Project Specs (No Guesswork)",
+      "list3": "Digital Contracts & Payments",
+      "button": "Join as Pro"
+    }
+  },
+  "final_cta": {
+    "heading": "Don\"t Renovate in the Dark.",
+    "subheading": "Turn your empty apartment into a home without the stress and overspending.",
+    "button": "Create My Project Plan",
+    "login_prompt": "Already have an account?",
+    "login_link": "Log In"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}
